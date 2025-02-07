@@ -18,21 +18,35 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="http"/>
-                <data android:mimeType="video/mpeg"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:mimeType="video/mpeg" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity2"
+        <activity
+            android:name=".MainActivity2"
             android:exported="true"
             tools:ignore="DuplicateActivity">
             <intent-filter>
-            <action android:name="stam1234"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="stam1234" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="stam1234" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
